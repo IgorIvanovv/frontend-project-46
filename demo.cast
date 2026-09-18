@@ -1,7 +1,0 @@
-{"version": 2, "width": 76, "height": 41, "timestamp": 1789757081, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
-[0.020381, "o", "\u001b[?2004h\u001b[01;33mgendiff\u001b[00m $ "]
-[2.724339, "o", "\u001b[7mgendiff file1.json file2.json\u001b[27m"]
-[4.595234, "o", "\r\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Cgendiff file1.json file2.json\r\n\u001b[?2004l\r"]
-[4.804061, "o", "{\r\n  - follow: false\r\n    host: hexlet.io\r\n  - proxy: 123.234.53.22\r\n  - timeout: 50\r\n  + timeout: 20\r\n  + verbose: true\r\n}\r\n"]
-[4.810339, "o", "\u001b[?2004h\u001b[01;33mgendiff\u001b[00m $ "]
-[7.548815, "o", "\u001b[?2004l\r\r\nexit\r\n"]
