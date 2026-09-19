@@ -19,6 +19,7 @@
     "lodash": "^4.18.1"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^5.0.1",
     "oxfmt": "^0.68.0",
     "oxlint": "^1.83.0",
     "vitest": "^5.0.1"
