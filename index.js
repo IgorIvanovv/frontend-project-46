@@ -1,4 +1,4 @@
-import parseFile from "./parser.js";
+import parseFile from "./parsers/parserSelector.js";
 import _ from "lodash";
 const genDiff = (filepath1, filepath2) => {
   const firstObject = parseFile(filepath1);

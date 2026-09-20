@@ -21,7 +21,21 @@ test("compares flat JSON files", () => {
   + verbose: true
 }`);
 });
+test("compares flat YAML files", () => {
+  const filepath3 = path.join(__dirname, "../__fixtures__/file1.yaml");
+  const filepath4 = path.join(__dirname, "../__fixtures__/file2.yaml");
 
+  const result = genDiff(filepath3, filepath4);
+
+  expect(result).toBe(`{
+  - follow: false
+    host: hexlet.io
+  - proxy: 123.234.53.22
+  - timeout: 50
+  + timeout: 20
+  + verbose: true
+}`);
+});
 test("the date is string", () => {
   const filepath1 = path.join(__dirname, "../__fixtures__/file1.json");
   const filepath2 = path.join(__dirname, "../__fixtures__/file2.json");
