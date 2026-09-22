@@ -9,3 +9,7 @@
 ### Example how working gendiff with YAML
 
 <a href="https://asciinema.org/a/0WYDmUAliBoIDpfm" target="_blank"><img src="https://asciinema.org/a/0WYDmUAliBoIDpfm.svg"></a>
+
+### Example сomparing Nested Structures (JSON/YAML)
+
+<a href="https://asciinema.org/a/uqBsCS8pU1NHFUIN" target="_blank"><img src="https://asciinema.org/a/uqBsCS8pU1NHFUIN.svg"></a>
