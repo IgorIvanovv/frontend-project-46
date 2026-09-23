@@ -13,3 +13,7 @@
 ### Example сomparing Nested Structures (JSON/YAML)
 
 <a href="https://asciinema.org/a/uqBsCS8pU1NHFUIN" target="_blank"><img src="https://asciinema.org/a/uqBsCS8pU1NHFUIN.svg"></a>
+
+### Example using Plain Fornat
+
+<a href="https://asciinema.org/a/Lx2nYKRrMArHKXzE" target="_blank"><img src="https://asciinema.org/a/Lx2nYKRrMArHKXzE.svg"></a>

@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import genDiff from "../index.js";
+import genDiff from "../src/index.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -109,7 +109,24 @@ test("compares nested YAML files", () => {
     }
 }`);
 });
+test("Example plain format", () => {
+  const filepath1 = path.join(__dirname, "../__fixtures__/file1.json");
+  const filepath2 = path.join(__dirname, "../__fixtures__/file2.json");
 
+  const result = genDiff(filepath1, filepath2, "plain");
+
+  expect(result).toBe(`Property 'common.follow' was added with value: false
+Property 'common.setting2' was removed
+Property 'common.setting3' was updated. From true to null
+Property 'common.setting4' was added with value: 'blah blah'
+Property 'common.setting5' was added with value: [complex value]
+Property 'common.setting6.doge.wow' was updated. From '' to 'so much'
+Property 'common.setting6.ops' was added with value: 'vops'
+Property 'group1.baz' was updated. From 'bas' to 'bars'
+Property 'group1.nest' was updated. From [complex value] to 'str'
+Property 'group2' was removed
+Property 'group3' was added with value: [complex value]`);
+});
 test("the date is string", () => {
   const filepath1 = path.join(__dirname, "../__fixtures__/file1.json");
   const filepath2 = path.join(__dirname, "../__fixtures__/file2.json");

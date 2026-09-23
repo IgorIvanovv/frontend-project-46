@@ -11,10 +11,11 @@ program
   .version("1.0.0")
   .option("-f, --format [type]", "output format")
   .arguments("<filepath1> <filepath2>")
-  .action((filepath1, filepath2) => {
+  .action((filepath1, filepath2, options) => {
     const result = genDiff(
       path.resolve("__fixtures__", filepath1),
       path.resolve("__fixtures__", filepath2),
+      options.format,
     );
     console.log(result);
   });

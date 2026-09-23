@@ -1,4 +1,4 @@
-import stylish from "./formatters/stylish.js";
+import formatTree from "./formatters/index.js";
 import parseFile from "./parsers/parserSelector.js";
 import _ from "lodash";
 const buildDiff = (firstObject, secondObject) => {
@@ -63,12 +63,13 @@ const buildDiff = (firstObject, secondObject) => {
   });
   return diffResult;
 };
-const genDiff = (filepath1, filepath2) => {
+const genDiff = (filepath1, filepath2, formatName = "stylish") => {
   const firstObject = parseFile(filepath1);
   const secondObject = parseFile(filepath2);
 
   const diffResult = buildDiff(firstObject, secondObject);
-  return ["{", ...stylish(diffResult), "}"].join("\n");
+  return formatTree(diffResult, formatName);
+  // return ["{", ...stylish(diffResult), "}"].join("\n");
 };
 
 export default genDiff;
