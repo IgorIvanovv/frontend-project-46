@@ -14,6 +14,10 @@
 
 <a href="https://asciinema.org/a/uqBsCS8pU1NHFUIN" target="_blank"><img src="https://asciinema.org/a/uqBsCS8pU1NHFUIN.svg"></a>
 
-### Example using Plain Fornat
+### Example using Plain Format
 
 <a href="https://asciinema.org/a/Lx2nYKRrMArHKXzE" target="_blank"><img src="https://asciinema.org/a/Lx2nYKRrMArHKXzE.svg"></a>
+
+### Example using json format output
+
+<a href="https://asciinema.org/a/pOXAcNfAqMD97vyh" target="_blank"><img src="https://asciinema.org/a/pOXAcNfAqMD97vyh.svg"></a>

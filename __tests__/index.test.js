@@ -127,6 +127,14 @@ Property 'group1.nest' was updated. From [complex value] to 'str'
 Property 'group2' was removed
 Property 'group3' was added with value: [complex value]`);
 });
+test("Example json format output", () => {
+  const filepath1 = path.join(__dirname, "../__fixtures__/file1.json");
+  const filepath2 = path.join(__dirname, "../__fixtures__/file2.json");
+
+  const result = genDiff(filepath1, filepath2, "json");
+
+  expect(() => JSON.parse(result)).not.toThrow();
+});
 test("the date is string", () => {
   const filepath1 = path.join(__dirname, "../__fixtures__/file1.json");
   const filepath2 = path.join(__dirname, "../__fixtures__/file2.json");
