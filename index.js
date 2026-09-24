@@ -1,5 +1,5 @@
-import formatTree from "./formatters/index.js";
-import parseFile from "./parsers/parserSelector.js";
+import formatTree from "./src/formatters/index.js";
+import parseFile from "./src/parsers/parserSelector.js";
 import _ from "lodash";
 const buildDiff = (firstObject, secondObject) => {
   const firstKeys = Object.keys(firstObject);

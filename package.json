@@ -9,7 +9,7 @@
   },
   "type": "module",
   "main": "index.js",
-  "exports": "./src/index.js",
+  "exports": "./index.js",
   "scripts": {
     "test": "vitest run",
     "lint": "oxlint && oxfmt --check",
