@@ -5,10 +5,11 @@
   "license": "ISC",
   "author": "Igor Ivanov",
   "bin": {
-    "gendiff": "./src/gendiff.js"
+    "gendiff": "./bin/gendiff.js"
   },
   "type": "module",
   "main": "index.js",
+  "exports": "./src/index.js",
   "scripts": {
     "test": "vitest run",
     "lint": "oxlint && oxfmt --check",
